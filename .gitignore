@@ -6,3 +6,4 @@ package-lock.json
 storage
 public/uploads
 composer.lock
+.vscode
