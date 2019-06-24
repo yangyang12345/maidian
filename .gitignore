@@ -1,0 +1,8 @@
+vendor
+node_modules
+.idea
+package-lock.json
+.env
+storage
+public/uploads
+composer.lock
