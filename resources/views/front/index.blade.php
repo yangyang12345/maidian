@@ -45,7 +45,7 @@
       
     </header>
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5" id="section-home">
+    <div class="site-blocks-cover overlay" style="background-image: url({{ asset('images/hero_bg_2.jpg') }});" data-aos="fade" data-stellar-background-ratio="0.5" id="section-home">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
 
@@ -168,7 +168,7 @@
       </div>
     </div>
 
-  <div class="site-section bg-image overlay" style="background-image: url('images/hero_bg_4.jpg');" id="section-how-it-works">
+  <div class="site-section bg-image overlay" style="background-image: url({{ asset('images/hero_bg_4.jpg') }});" id="section-how-it-works">
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-md-7 text-center border-primary">

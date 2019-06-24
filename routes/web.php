@@ -13,26 +13,8 @@
 
 
 // 前端页面路由
-Route::get('/','IndexController@index');
+Route::get('/index','IndexController@index');
 
-// Route::prefix('admin')->group(function () {
-//     Route::get('users', function () {
-//         // 匹配包含 "/admin/users" 的 URL
-//     });
-
-//     Route::get('statistics', 'StatisticsController@index')->middleware('auth');
-
-//     Route::get('user', 'UserController@index')->middleware('auth');
-
-//     Route::get('demand', 'DemandController@index')->middleware('auth');
-//     Route::get('demand/{id}', 'DemandController@detail')->middleware('auth');
-//     Route::get('demand/check/{id}', 'DemandController@check')->middleware('auth');
-
-//     Route::get('activity', 'ActivityController@index')->middleware('auth');
-
-//     Route::get('api_doc', 'UserController@doc')->middleware('auth');
-
-// });
 
 Auth::routes();
 
