@@ -1752,10 +1752,7 @@ progress::-webkit-progress-value, progress::-moz-progress-bar
 .per-want-img{
   margin-bottom: 20px;
 }
-.per-want-title{
-  font-weight: 600;
-  margin-top: 20px;
-}
+
 .disLeft{
     float: left;
     width: 20%;
@@ -1838,12 +1835,12 @@ progress::-webkit-progress-value, progress::-moz-progress-bar
   padding-top: 7px;
   box-sizing: border-box;
 }
-.perCentMargin-top{
-  margin-top: 40px;
-}
+
 .per-want-title{
+  font-weight: 600;
   padding-bottom: 10px;
   border-bottom: 2px solid #f16821;
+  padding-top: 50px;
 }
 .defaultBottom{
   width: 90%;

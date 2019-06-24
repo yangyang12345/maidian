@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/perCentermain.css">
+    <link rel="stylesheet" href="../css/perCenterstyle.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700">
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
+
+
+
+    <link rel="stylesheet" href="../css/aos.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="http://www.jq22.com/jquery/bootstrap-3.3.4.css" rel="stylesheet">
+    <!--[if IE]>
+    <script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body class="perCenterRight">
+<div class="container perCentMargin-top">
+    <h3 class="text-orange per-want-title">设置支付密码</h3><br>
+    <h5 class="baseInfo-notice fontColor"><img src="../images/notice.png">温馨提示：为保障交易顺利进行，会员个人资料无法自由修改，如需更改联系方式，请致电客服：400-990-8331</h5>
+    <h5 class="baseInfo-notice fontColor">(修改支付密码时必须填写密保，无密保请先设置密保后才能修改，默认支付密码为登录密码)</h5>
+    <div class="margin-top-30">
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">选择验证方式:</h5>
+            <div class="form-group col-md-10">
+                <select class="form-control " id="chooseTestWay" data-province="---- 请选择 ----">
+                    <option>--请选择--</option>
+                    <option value="密保问题验证">密保问题验证</option>
+                    <option value="原支付密码验证">原支付密码验证</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row baseInfo-perTitle" id="way1">
+            <h5 class="col-md-2">验证密保问题:</h5>
+            <div class="form-group col-md-10">
+                <select class="form-control " id="setPayQue" data-province="---- 请选择 ----">
+                    <option>--请选择--</option>
+                    <option>您的出生地是？</option>
+                    <option>您父亲的姓名是？</option>
+                    <option>您母亲的生日是？</option>
+                    <option>您配偶的姓名是？</option>
+                    <option>您配偶的生日是？</option>
+                    <option>您孩子的名字是？</option>
+                    <option>您小学的学校名称是？</option>
+                    <option>您小学班主任的名称是？</option>
+                    <option>您初中班主任的名称是？</option>
+                    <option>您高中班主任的名称是？</option>
+                    <option>您大学辅导员的名字是？</option>
+                    <option>您的大学学号是？</option>
+                    <option>您的工号是？</option>
+                </select>
+            </div>
+        </div>
+        <div class="row baseInfo-perTitle" id="way2">
+            <h5 class="col-md-2 ">验证密保答案:</h5>
+            <span class="col-md-10"><input type="text" id="setPayAns" class="form-control" placeholder="请输入您所选问题的密码答案"></span>
+        </div>
+        <div class="row baseInfo-perTitle" id="way3">
+            <h5 class="col-md-2 ">原支付密码:</h5>
+            <span class="col-md-10"><input type="text" id="setPayOldKey" class="form-control" placeholder="请输入您所在使用的支付密码"></span>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">新支付密码:</h5>
+            <span class="col-md-10"><input type="text" id="setPayNewKey" class="form-control" placeholder="请输入您想要设定的新支付密码"></span>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">确认支付密码:</h5>
+            <span class="col-md-10"><input type="text" id="setPayNewKeyAga" class="form-control" placeholder="请再次确认您想要设定的支付密码"></span>
+        </div>
+        <div class="col-md-12 ">
+            <input type="submit" value="确认修改" class="btn btn-primary py-2 px-4 text-white">
+            <span><a href="forgotPayKey.html">忘记支付密码</a></span>
+        </div>
+    </div>
+
+
+</div>
+<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+<script src="../js/distpicker.data.js"></script>
+<script src="../js/distpicker.js"></script>
+<script src="../js/dismain.js"></script>
+<script src="../js/myJS.js"></script>
+
+</body>
+</html>

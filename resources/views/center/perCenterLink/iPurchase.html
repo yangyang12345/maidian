@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/perCentermain.css">
+    <link rel="stylesheet" href="../css/perCenterstyle.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700">
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
+
+
+
+    <link rel="stylesheet" href="../css/aos.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="http://www.jq22.com/jquery/bootstrap-3.3.4.css" rel="stylesheet">
+    <!--[if IE]>
+    <script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body class="perCenterRight">
+<div class="container perCentMargin-top">
+    <h3 class="text-orange per-want-title">我要收购</h3><br>
+    <h5 class="baseInfo-notice fontColor"><img src="../images/notice.png">温馨提示：出售网店，交易成功后，麦淘网将收取网店成交价格的10%作为手续费！</h5>
+    <div class="fontColor">
+        买家流程 1、注册账号 2、选择网店 3、拍下付款 4、签订合同 5、交易完成
+    </div>
+    <div>
+        <h4 class="per-want-title baseInfo-title fontColor">基础信息填写</h4><br>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">网店所属:</h5>
+            <div class="form-group col-md-5">
+                <select class="form-control " id="beLong" data-province="---- 请选择 ----">
+                    <option>--请选择--</option>
+                    <option>天猫</option>
+                    <option>淘宝</option>
+                    <option>贝贝网</option>
+                    <option>聚美优品</option>
+                    <option>唯品会</option>
+                    <option>米折网</option>
+                    <option>折800</option>
+                    <option>卷皮网</option>
+                    <option>楚楚街</option>
+                    <option>亚马逊</option>
+                    <option>易迅</option>
+                    <option>苏宁</option>
+                    <option>微信小店</option>
+                    <option>当当</option>
+                    <option>一号店</option>
+                    <option>阿里巴巴</option>
+                    <option>蘑菇街</option>
+                    <option>美丽说</option>
+                    <option>口袋购物</option>
+                    <option>商派</option>
+                    <option>5173</option>
+                    <option>独立商城</option>
+                    <option>其它</option>
+                </select>
+            </div>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2 ">网店类型:</h5>
+            <div class="col-md-10 row">
+                <div class="col-md-4"><input type="checkbox"><span>淘宝农资</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>服饰</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>居家日用</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>家装家饰</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>化妆品</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>母婴用品</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>3C数码类</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>运动户外</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>食品</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>玩乐收藏</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>网游及QQ</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>乐器</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>汽车及配件</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>书籍音像</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>珠宝配饰</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>服务大类</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>新行业</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>鞋类箱包</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>家用电器</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>电子票务凭证</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>保健品及医药</span></div>
+                <div class="col-md-4"><input type="checkbox"><span>话费通讯</span></div>
+            </div>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2 ">信息标题:</h5>
+            <span class="col-md-10"><input type="text" id="purchaseStoreTitle" class="form-control" placeholder="请输入您所需店铺的信息标题"></span>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">网店等级:</h5>
+            <div class="form-group col-md-5">
+                <select class="form-control " id="purchaseStoreLevel" data-province="---- 请选择 ----">
+                    <option>--请选择--</option>
+                    <option>五金冠</option>
+                    <option>四金冠</option>
+                    <option>三金冠</option>
+                    <option>二金冠</option>
+                    <option>一金冠</option>
+                    <option>五皇冠</option>
+                    <option>四皇冠</option>
+                    <option>三皇冠</option>
+                    <option>二皇冠</option>
+                    <option>一皇冠</option>
+                    <option>五钻</option>
+                    <option>四钻</option>
+                    <option>三钻</option>
+                    <option>二钻</option>
+                    <option>一钻</option>
+                    <option>五心</option>
+                    <option>四心</option>
+                    <option>三心</option>
+                    <option>二心</option>
+                    <option>一心</option>
+                </select>
+            </div>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">好评率:</h5>
+            <span class="col-md-10"><input type="text" id="purchaseStoreFavour" class="form-control" placeholder="请输入您所需店铺的好评率（大于等于）"></span>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">动态评分:</h5>
+            <span class="col-md-10"><input type="text" id="purchaseStoreScore" class="form-control" placeholder="请输入您所需店铺的动态评分（大于等于）"></span>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">创店时间:</h5>
+            <span class="col-md-10"><input type="text" id="purchaseStoreOT" class="form-control" placeholder="请输入您可接受所需店铺的创办时间"></span>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">店铺描述:</h5>
+            <span class="col-md-10"><textarea type="text" id="purchaseStoreDes" class="form-control" placeholder="请输入您对所需店铺的具体描述"></textarea></span>
+        </div>
+
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">参考价格:</h5>
+            <div class="row col-md-10">
+                <input type="text" id="purchaseStoreLowPrice" class="form-control col-md-5 marginLeftRight" placeholder="您可接受的最低出价(元)">
+                <input type="text" id="purchaseStoreTopPrice" class="form-control col-md-5 marginLeftRight" placeholder="您可接受的最高出价(元)">
+            </div>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">求购数量:</h5>
+            <span class="col-md-10"><input type="text" id="purchaseStoreNum" class="form-control" placeholder="请输入您需要店铺的数量"></span>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">求购有效时间:</h5>
+            <span class="col-md-10"><input type="text" id="purchaseStoreET" class="form-control" placeholder="请输入您此条购买信息需要保留的时间（天）"></span>
+        </div>
+        <div class="col-md-12 ">
+            <input type="submit" value="确认提交" class="btn btn-primary py-2 px-4 text-white">
+        </div>
+    </div>
+
+
+</div>
+<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+<script src="../js/distpicker.data.js"></script>
+<script src="../js/distpicker.js"></script>
+<script src="../js/dismain.js"></script>
+
+</body>
+</html>

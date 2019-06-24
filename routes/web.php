@@ -13,7 +13,14 @@
 
 
 // 前端页面路由
-Route::get('/index','IndexController@index');
+Route::get('/','IndexController@index')->name('index');
+Route::get('/Tmall','IndexController@tmall')->name('tmallstore');
+Route::get('/TmallNew','IndexController@tmall_new')->name('tmallnew');
+Route::get('/Otherstore','IndexController@other_store')->name('otherstore');
+Route::get('/Sellstore','IndexController@sell_store')->name('sellstore');
+
+Route::get('/Center','CenterController@index')->name('center');
+
 
 
 Auth::routes();

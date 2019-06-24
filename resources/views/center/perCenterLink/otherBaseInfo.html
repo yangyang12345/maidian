@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/perCentermain.css">
+    <link rel="stylesheet" href="../css/perCenterstyle.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700">
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
+
+
+
+    <link rel="stylesheet" href="../css/aos.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="http://www.jq22.com/jquery/bootstrap-3.3.4.css" rel="stylesheet">
+    <!--[if IE]>
+    <script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body class="perCenterRight">
+<div class="container perCentMargin-top">
+    <h3 class="text-orange per-want-title">我要出售</h3><br>
+    <h5 class="baseInfo-notice fontColor"><img src="../images/notice.png">温馨提示：出售网店，交易成功后，麦淘网将收取网店成交价格的10%作为手续费！</h5>
+    <div class="fontColor">
+        卖家流程 1、注册账号 2、登记网店 3、网站审核 4、买家付款 5、签订合同 6、交易完成
+    </div>
+    <div>
+        <h4 class="per-want-title baseInfo-title fontColor">基础信息填写</h4><br>
+        <div class="row">
+            <h5 class="col-md-2 fontColor">请选择省份:</h5>
+            <form class="form-inline col-md-10">
+                <div data-toggle="distpicker" class="row widthAll">
+                    <div class="form-group col-md-4">
+                        <label class="sr-only" for="province2">省份：</label>
+                        <select class="form-control widthAll" id="province2" data-province="---- 选择省 ----"></select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label class="sr-only" for="city2">城市：</label>
+                        <select class="form-control widthAll" id="city2" data-city="---- 选择市 ----"></select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label class="sr-only" for="district2">区域：</label>
+                        <select class="form-control widthAll" id="district2" data-district="---- 选择区 ----"></select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">信息标题:</h5>
+            <span class="col-md-10"><input type="text" id="sellOtherStoreTitle" class="form-control" placeholder="请输入比较有吸引力的信息标题"></span>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">店铺描述:</h5>
+            <span class="col-md-10"><textarea type="text" id="sellOtherStoreDes" class="form-control" placeholder="请输入能够突出特色的店铺描述"></textarea></span>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">网店地址:</h5>
+            <span class="col-md-10"><input type="text" id="sellOtherStoreAddress" class="form-control" placeholder="请输入网店的线上地址"></span>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">网店掌柜名:</h5>
+            <span class="col-md-10"><input type="text" id="sellOtherStoreBN" class="form-control" placeholder="请输入您的网店的掌柜名称"></span>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">网店价格:</h5>
+            <span class="col-md-10"><input type="text" id="sellOtherStorePrice" class="form-control" placeholder="请输入您认为网店应值价格（元）"></span>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">消费者保证金:</h5>
+            <div class="form-group col-md-3">
+                <select class="form-control " id="chSellOtherStorePledge" data-province="---- 请选择 ----">
+                    <option>--请选择--</option>
+                    <option>需退还</option>
+                    <option>不需退还</option>
+                </select>
+            </div>
+            <div class="col-md-7">
+                <input type="text" id="sellOtherStorePledge" class="form-control"  placeholder="请输入消费者保证金（元）">
+            </div>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">去年销售额:</h5>
+            <span class="col-md-10"><input type="text" id="sellOtherStoreYearSales" class="form-control" placeholder="请输入店铺去年全年的销售额（元）"></span>
+        </div>
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">商标类型:</h5>
+            <span class="col-md-10">
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label class="text-black-sell"><input type="radio" name="radio"  value="无"><i>✓</i>无</label>
+                        <label class="text-black-sell"><input type="radio" name="radio"  value="R标"><i>✓</i>R标</label>
+                        <label class="text-black-sell"><input type="radio" name="radio"  value="TM标"><i>✓</i>TM标</label>
+
+                    </div>
+                </div>
+            </span>
+        </div>
+
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">扣分情况:</h5>
+            <div class="col-md-3 deductPoints">
+                <span>一般违规扣 </span><span><input type="text" id="sellOtherStoreGeneral" placeholder="0"></span><span> 分</span>
+            </div>
+            <div class="col-md-3 deductPoints">
+                <span>严重违规扣 </span><span><input type="text" id="sellOtherStoreSerious" placeholder="0"></span><span> 分</span>
+            </div>
+            <div class="col-md-3 deductPoints">
+                <span>假冒商品扣 </span><span><input type="text" id="sellOtherStoreImitation" placeholder="0"></span><span> 分</span>
+            </div>
+
+
+        </div>
+
+        <div class="row baseInfo-perTitle">
+            <h5 class="col-md-2">出售人姓名:</h5>
+            <span class="col-md-10"><input type="text" id="sellOtherStoreName" class="form-control"></span>
+        </div>
+        <div class="col-md-12 ">
+            <input type="submit" value="确认出售" class="btn btn-primary py-2 px-4 text-white">
+        </div>
+    </div>
+
+
+</div>
+<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+<script src="../js/distpicker.data.js"></script>
+<script src="../js/distpicker.js"></script>
+<script src="../js/dismain.js"></script>
+
+</body>
+</html>
