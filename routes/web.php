@@ -16,10 +16,14 @@
 Route::get('/','IndexController@index')->name('index');
 Route::get('/Tmall','IndexController@tmall')->name('tmallstore');
 Route::get('/TmallNew','IndexController@tmall_new')->name('tmallnew');
-Route::get('/Otherstore','IndexController@other_store')->name('otherstore');
-Route::get('/Sellstore','IndexController@sell_store')->name('sellstore');
+Route::get('/OtherStore','IndexController@other_store')->name('otherstore');
+Route::get('/SellStore','IndexController@sell_store')->name('sellstore');
 
-Route::get('/Center','CenterController@index')->name('center');
+Route::prefix('Center')->group(function () {
+    Route::get('/','CenterController@index')->name('center');
+    Route::get('IWantSell','CenterController@iwantsell')->name('center.iwantsell');
+});
+
 
 
 

@@ -12,16 +12,16 @@
                 <nav>
                     <ul class="nav">
                         <li >
-                            <a href="javascript:;" class="nav-togg sellerImg"> <img src="images/seller.png" class="margin-right-10"/><span>我是卖家</span> </a>
+                            <a href="javascript:;" class="nav-togg sellerImg"> <img src="{{ asset('images/seller.png') }}" class="margin-right-10"/><span>我是卖家</span> </a>
                             <div>
                                 <ul>
-                                    <li class="perCenterNavFont"><a href="perCenterLink/iWantSell.html" target="_blank" class="iframe_link widthAll"><span>我要出售</span></a></li>
+                                    <li class="perCenterNavFont"><a href="{{ route('center.iwantsell') }}" class="iframe_link widthAll"><span>我要出售</span></a></li>
                                     <li class="perCenterNavFont"><a href="perCenterLink/iHaveSell.html" target="_blank" class="iframe_link widthAll"><span>我出售的店铺</span></a></li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <a href="javascript:;" class="nav-togg buyerImg"> <img src="images/buyer.png"  class="margin-right-10"/><span>我是买家</span> </a>
+                            <a href="javascript:;" class="nav-togg buyerImg"> <img src="{{ asset('images/buyer.png') }}"  class="margin-right-10"/><span>我是买家</span> </a>
                             <div>
                                 <ul>
                                     <li class="perCenterNavFont"><a href="perCenterLink/iPurchase.html" target="_blank" class="iframe_link widthAll"><span>我要收购</span></a></li>
@@ -32,7 +32,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="javascript:;" class="nav-togg moneyImg"> <img src="images/money.png" class="margin-right-10 "/><span>资金管理</span> </a>
+                            <a href="javascript:;" class="nav-togg moneyImg"> <img src="{{ asset('images/money.png') }}" class="margin-right-10 "/><span>资金管理</span> </a>
                             <div>
                                 <ul>
                                     <li class="perCenterNavFont"><a href="perCenterLink/rechargeMoney.html" target="_blank" class="iframe_link widthAll"><span>我要充值</span></a></li>
@@ -46,7 +46,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="javascript:;" class="nav-togg personalImg"> <img src="images/personal.png" class="margin-right-10 "/><span>我的信息</span> </a>
+                            <a href="javascript:;" class="nav-togg personalImg"> <img src="{{ asset('images/personal.png') }}" class="margin-right-10 "/><span>我的信息</span> </a>
                             <div>
                                 <ul>
                                     <li class="perCenterNavFont"><a href="perCenterLink/iPartTimeJob.html" target="_blank" class="iframe_link widthAll"><span>我代理的兼职店铺</span></a></li>
@@ -60,7 +60,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="javascript:;" class="nav-togg adviceImg"> <img src="images/advice.png" class="margin-right-10 "/><span>咨询建议</span> </a>
+                            <a href="javascript:;" class="nav-togg adviceImg"> <img src="{{ asset('images/advice.png') }}" class="margin-right-10 "/><span>咨询建议</span> </a>
                             <div>
                                 <ul>
                                     <li class="perCenterNavFont"><a href="perCenterLink/iWantAsk.html" target="_blank" class="iframe_link"><span>我要提问</span></a></li>
@@ -73,7 +73,7 @@
                 </nav>
             </div>
         </div>
-        <div class="main" style="height: 1600px;width: 77%;">
+        <div class="main" style="width: 77%;">
             <div class="main-content">
                 <div class="perCenterRight">
                     @yield('center_content')
@@ -82,4 +82,7 @@
         </div>
     </div>
 </div>
+@push('common-js')
+<script src="{{ asset("/js/klorofil-common.js")}}"></script>
+@endpush
 @endsection
