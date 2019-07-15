@@ -142,14 +142,14 @@
   <div class="scholars-choose-box default-box scholars-choose-box-forLine">
     <p class="choose-content left">
       <em>商标</em>
-<!--          <span>不限</span>-->
-<!--          <span>第1类-化学原料</span>-->
-<!--          <span>第2类-颜料油漆</span>-->
-<!--          <span>第3类-日化用品</span>-->
-<!--          <span>第4类-燃料油脂</span>-->
-<!--          <span>第5类-医药</span>-->
-<!--          <span>第6类-金属材料</span>-->
-<!--          <span>第7类-机械设备</span>-->
+         <span>不限</span>
+         <span>第1类-化学原料</span>
+         <span>第2类-颜料油漆</span>
+         <span>第3类-日化用品</span>
+         <span>第4类-燃料油脂</span>
+         <span>第5类-医药</span>
+         <span>第6类-金属材料</span>
+         <span>第7类-机械设备</span>
     </p>
     <div class="scholars-choose-box scholars-choose-box2 left seemorebox scholars-choose-box-forLine">
       <div class="title left">商标</div>
@@ -212,34 +212,31 @@
 
 <div class="site-section">
   <div class="container row" style="margin: auto">
+    @foreach ($list as $l)
     <div class="row col-lg-6">
-      
-      <!--<div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade">
-        <img src="images/img_1.jpg" alt="Image" class="img-fluid rounded">
-      </div>-->
       <div class="row setHover">
         <div class=" col-lg-12 col-md-9 order-md-3 detailCardLeft" data-aos="fade">
           <div class="text-left pb-1 border-primary mb-4">
-            <h5 class="text-primary detailCardLeftTitle"><img src="images/store.png"/>风车新品专营店</h5>
+            <h5 class="text-primary detailCardLeftTitle"><img src="images/store.png"/>{{ $l->name }}</h5>
           </div>
           <div class="row">
             <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>主营类目：</span>汽车及配件</p>
+              <p><span>主营类目：</span>{{ $l->categories }}</p>
             </div>
             <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>所在区域：</span>江浙沪地区（杭州市）</p>
+              <p><span>所在区域：</span>{{ $l->area }}</p>
             </div>
             <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
               <p><span>纳税资质：</span>一般纳税人</p>
             </div>
             <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>商标分类：</span>12类</p>
+              <p><span>商标分类：</span>{{ $l->type_mark }}</p>
             </div>
             <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
               <p><span>技术年费：</span>0元</p>
             </div>
             <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>保证金：</span>0元（不需退还）</p>
+              <p><span>保证金：</span>{{ $l->deposit }}</p>
             </div>
           </div>
           <div class="row cardTag">
@@ -251,207 +248,14 @@
         </div>
       </div>
      </div>
-
-    <div class="row col-lg-6">
-
-      <!--<div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade">
-        <img src="images/img_1.jpg" alt="Image" class="img-fluid rounded">
-      </div>-->
-      <div class="row setHover">
-        <div class=" col-lg-12 col-md-9 order-md-3 detailCardLeft" data-aos="fade">
-          <div class="text-left pb-1 border-primary mb-4">
-            <h5 class="text-primary detailCardLeftTitle"><img src="images/store.png"/>风车新品专营店</h5>
-          </div>
-          <div class="row">
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>主营类目：</span>汽车及配件</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>所在区域：</span>江浙沪地区（杭州市）</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>纳税资质：</span>一般纳税人</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>商标分类：</span>12类</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>技术年费：</span>0元</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>保证金：</span>0元（不需退还）</p>
-            </div>
-          </div>
-          <div class="row cardTag">
-            <div class="col-md-12 mb-md-2 mb-0 col-lg-12 cardTag">
-              <input type="submit" value="立即抢购" class="btn btn-primary py-2 px-4 text-white">
-              <input type="submit" value="立即询价" class="btn btn-primary py-2 px-4 text-white">
-            </div>
-          </div>
-        </div>
-      </div>
+    @endforeach
     </div>
-
-    <div class="row col-lg-6">
-
-      <!--<div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade">
-        <img src="images/img_1.jpg" alt="Image" class="img-fluid rounded">
-      </div>-->
-      <div class="row setHover">
-        <div class=" col-lg-12 col-md-9 order-md-3 detailCardLeft" data-aos="fade">
-          <div class="text-left pb-1 border-primary mb-4">
-            <h5 class="text-primary detailCardLeftTitle"><img src="images/store.png"/>风车新品专营店</h5>
-          </div>
-          <div class="row">
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>主营类目：</span>汽车及配件</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>所在区域：</span>江浙沪地区（杭州市）</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>纳税资质：</span>一般纳税人</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>商标分类：</span>12类</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>技术年费：</span>0元</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>保证金：</span>0元（不需退还）</p>
-            </div>
-          </div>
-          <div class="row cardTag">
-            <div class="col-md-12 mb-md-2 mb-0 col-lg-12 cardTag">
-              <input type="submit" value="立即抢购" class="btn btn-primary py-2 px-4 text-white">
-              <input type="submit" value="立即询价" class="btn btn-primary py-2 px-4 text-white">
-            </div>
-          </div>
-        </div>
+    
+    <hr>
+    <div class="row">
+      <div class="m-auto">
+        {{ $list->links() }}
       </div>
-    </div>
-
-    <div class="row col-lg-6">
-
-      <!--<div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade">
-        <img src="images/img_1.jpg" alt="Image" class="img-fluid rounded">
-      </div>-->
-      <div class="row setHover">
-        <div class=" col-lg-12 col-md-9 order-md-3 detailCardLeft" data-aos="fade">
-          <div class="text-left pb-1 border-primary mb-4">
-            <h5 class="text-primary detailCardLeftTitle"><img src="images/store.png"/>风车新品专营店</h5>
-          </div>
-          <div class="row">
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>主营类目：</span>汽车及配件</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>所在区域：</span>江浙沪地区（杭州市）</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>纳税资质：</span>一般纳税人</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>商标分类：</span>12类</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>技术年费：</span>0元</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>保证金：</span>0元（不需退还）</p>
-            </div>
-          </div>
-          <div class="row cardTag">
-            <div class="col-md-12 mb-md-2 mb-0 col-lg-12 cardTag">
-              <input type="submit" value="立即抢购" class="btn btn-primary py-2 px-4 text-white">
-              <input type="submit" value="立即询价" class="btn btn-primary py-2 px-4 text-white">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row col-lg-6">
-
-      <!--<div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade">
-        <img src="images/img_1.jpg" alt="Image" class="img-fluid rounded">
-      </div>-->
-      <div class="row setHover">
-        <div class=" col-lg-12 col-md-9 order-md-3 detailCardLeft" data-aos="fade">
-          <div class="text-left pb-1 border-primary mb-4">
-            <h5 class="text-primary detailCardLeftTitle"><img src="images/store.png"/>风车新品专营店</h5>
-          </div>
-          <div class="row">
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>主营类目：</span>汽车及配件</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>所在区域：</span>江浙沪地区（杭州市）</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>纳税资质：</span>一般纳税人</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>商标分类：</span>12类</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>技术年费：</span>0元</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>保证金：</span>0元（不需退还）</p>
-            </div>
-          </div>
-          <div class="row cardTag">
-            <div class="col-md-12 mb-md-2 mb-0 col-lg-12 cardTag">
-              <input type="submit" value="立即抢购" class="btn btn-primary py-2 px-4 text-white">
-              <input type="submit" value="立即询价" class="btn btn-primary py-2 px-4 text-white">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row col-lg-6">
-
-      <!--<div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade">
-        <img src="images/img_1.jpg" alt="Image" class="img-fluid rounded">
-      </div>-->
-      <div class="row setHover">
-        <div class=" col-lg-12 col-md-9 order-md-3 detailCardLeft" data-aos="fade">
-          <div class="text-left pb-1 border-primary mb-4">
-            <h5 class="text-primary detailCardLeftTitle"><img src="images/store.png"/>风车新品专营店</h5>
-          </div>
-          <div class="row">
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>主营类目：</span>汽车及配件</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>所在区域：</span>江浙沪地区（杭州市）</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>纳税资质：</span>一般纳税人</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>商标分类：</span>12类</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-5">
-              <p><span>技术年费：</span>0元</p>
-            </div>
-            <div class="col-md-2 mb-md-2 mb-1 col-lg-6">
-              <p><span>保证金：</span>0元（不需退还）</p>
-            </div>
-          </div>
-          <div class="row cardTag">
-            <div class="col-md-12 mb-md-2 mb-0 col-lg-12 cardTag">
-              <input type="submit" value="立即抢购" class="btn btn-primary py-2 px-4 text-white">
-              <input type="submit" value="立即询价" class="btn btn-primary py-2 px-4 text-white">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      
     </div>
   </div>
 </div>
