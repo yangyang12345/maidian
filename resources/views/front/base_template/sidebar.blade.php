@@ -24,7 +24,33 @@
             <li><a href="{{ route('otherstore') }}" class="nav-link">其他商城</a></li>
             <li><a href="{{ route('sellstore') }}" class="nav-link">出售店铺</a></li>
             <!-- <li><a href="evaStore.html" class="nav-link">网站估价</a></li> -->
+            @guest
             <li><a href="" data-toggle="modal" data-target="#login" class="nav-link">登陆</a></li>
+            <!-- @if (Route::has('register'))       
+            <li><a href="" data-toggle="modal" data-target="#login" class="nav-link">登陆</a></li>
+            @endif -->
+            @else
+            <li class="nav-item dropdown">
+              <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                {{ Auth::user()->name }} <span class="caret"></span>
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ route('center') }}">
+                  {{ __('个人中心') }}
+                </a>
+                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                  {{ __('退出登录') }}
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                  @csrf
+                </form>
+              </div>
+            </li>
+            @endguest
+            
           </ul>
         </nav>
       </div>

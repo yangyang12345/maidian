@@ -23,7 +23,7 @@ th{
     margin-bottom:30px;
     font-weight:300
 }footer{
-     position:absolute;
+     /* position:absolute; */
      bottom:0;
      right:0;
      padding-top:15px;
@@ -65,7 +65,8 @@ th{
     left:0;
     position:relative;
     float:right;
-    background-color:#f5f5fa
+    background-color:#f5f5fa;
+    margin-bottom: 50px;
 }
 #wrapper #sidebar-nav,#wrapper .main{
     overflow: visible;

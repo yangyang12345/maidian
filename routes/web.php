@@ -20,8 +20,8 @@ Route::get('/OtherStore','IndexController@other_store')->name('otherstore');
 Route::get('/SellStore','IndexController@sell_store')->name('sellstore');
 
 Route::prefix('Center')->group(function () {
-    Route::get('/','CenterController@index')->name('center');
-    Route::get('IWantSell','CenterController@iwantsell')->name('center.iwantsell');
+    Route::get('/','CenterController@index')->name('center')->middleware('auth');
+    Route::get('IWantSell','CenterController@iwantsell')->name('center.iwantsell')->middleware('auth');
 });
 
 

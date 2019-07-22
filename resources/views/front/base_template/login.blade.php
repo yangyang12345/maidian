@@ -1,5 +1,6 @@
 
-  <!-- 注册窗口 -->
+@if (!Auth::check())
+    <!-- 注册窗口 -->
   <div id="register" class="modal fade" style="z-index: 10000;" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -16,7 +17,7 @@
             <div class="form-group">
               <div class="form-group-title">
                 <img src="images/user.png"/>
-                <lable  for="">请输入手机号或邮箱：</lable>
+                <lable  for="">请输入手机号：</lable>
               </div>
               <input class="form-control" type="email" placeholder="例如:123@123.com">
             </div>
@@ -66,20 +67,33 @@
           <h1 class="text-center">登录</h1>
         </div>
         <div class="modal-body">
-          <form class="form-group" action="">
+          <form class="form-group" action="{{ route('login') }}" method="post">
+            @csrf
             <div class="form-group">
               <div class="form-group-title">
                 <img src="images/user.png"/>
                 <lable  for="">用户名</lable>
               </div>
-              <input class="form-control" type="text" placeholder="">
+              <input id="tel" type="text" class="form-control{{ $errors->has('tel') ? ' is-invalid' : '' }}" name="tel" value="{{ old('tel') }}" required autofocus>
+
+                    @if ($errors->has('tel'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('tel') }}</strong>
+                        </span>
+                    @endif
+    
             </div>
             <div class="form-group">
               <div class="form-group-title">
                 <img src="images/password.png"/>
                 <lable  for="">密码</lable>
               </div>
-              <input class="form-control" type="password" placeholder="">
+              <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+              @if ($errors->has('password'))
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $errors->first('password') }}</strong>
+                  </span>
+              @endif
             </div>
             <div>
               <div class="form-control-left">
@@ -140,3 +154,7 @@
       </div>
     </div>
   </div>
+
+@endif
+
+  
